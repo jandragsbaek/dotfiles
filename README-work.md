@@ -1,4 +1,8 @@
-# Installing things at work
+# Work setup
+
+This README is intended to suppliment the main README, to **inspire** coworkers on how to get up and running, _fast_.
+
+## Installing things
 
 Run `work.sh`. It contains a bunch of packages that I personally use, but please review the file before running it blindly.
 
