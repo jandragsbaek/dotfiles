@@ -23,8 +23,9 @@ brew cask install 1password \
                   alfred \
                   aviatrix-vpn-client \
                   google-chrome \
+                  slack \
+                  visual-studio-code \
                   zoomus \
-                  slack
 
 # and enable AWS stuffs
 sudo pip install aws-google-auth
@@ -35,3 +36,7 @@ $(brew --prefix)/opt/fzf/install
 # install helm locally and add the 'edit' plugin
 helm init --client-only
 helm plugin install https://github.com/mstrzele/helm-edit
+
+# install VS Code plugins
+code --install-extension ms-vscode.Theme-TomorrowKit
+code --install-extension yzhang.markdown-all-in-one

@@ -27,3 +27,7 @@
 - [helm](https://github.com/helm/helm)
 - [kubectl](https://github.com/kubernetes/kubectl)
 - [minikube](https://github.com/kubernetes/minikube), which depends on [hyperkit](https://github.com/moby/hyperkit)
+
+## Visual Studio Code - Plugins
+
+ - [Tomorrow and Tomorrow Night Theme Kit](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Theme-TomorrowKit)
