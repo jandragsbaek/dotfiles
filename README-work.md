@@ -2,6 +2,12 @@
 
 This README is intended to suppliment the main README, to **inspire** coworkers on how to get up and running, _fast_.
 
+## Getting accounts set up
+
+You should have been introduced to 1Password. It is __highly__ recommended to use a [generator that use diceware](https://www.rempe.us/diceware/#eff) and at least use 7 words.
+
+We utilize SSO most places. This is either tied up to your github account or your google account. It is perfectly fine if you want to use your own github account, just make sure that you configure your commits on work-things to use your work email. This can be done effectively, by using directories to load different git configs. See my `.gitconfig` for an example.
+
 ## Installing things
 
 Run `work.sh`. It contains a bunch of packages that I personally use, but please review the file before running it blindly.
@@ -28,10 +34,23 @@ As we also will be using GPG for some things, please generate a set of keys and 
 
 I highly recommend to enable auto-signing of commits, by running `git config --global commit.gpgSign true`.
 
-We use a single shared key to ssh to our kubernetes nodes. That key can be found in 1Password in the SRE Vault. You can configure your ssh configuration to use that key automatically. See my dotfiles for inspiration.
-
 ## Connecting to accounts
 
 You should install [1Password X](https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en), as it makes life in Chrome _much_ easier.
 
 Run `aws-google-auth` in your terminal. It asks for your email and other things. `IDP` is `C019ti8in` and `SP` is `759970038732`.
+
+## Connecting to kubernetes clusters
+
+Make sure that you have `kubectl` and `kops` installed. My `work.sh` file takes care of this.
+
+When authenticated with `aws-google-auth`, verify that you have correct permissions by running `kops get cluster`. If you see a list of clusters, you can export these to your local kubectl configuration by running:
+
+```
+$ kops export kubecfg k8s.stage.blackwoodseven.com
+$ kops export kubecfg k8s.prod.blackwoodseven.com
+```
+
+Following these, try `kubectl get pods`.
+
+To make things easier and to make less mistakes, do consider installing and using [kube-ps1](https://github.com/jonmosco/kube-ps1).
