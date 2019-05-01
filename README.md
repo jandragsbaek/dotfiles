@@ -11,7 +11,14 @@
 - [homebrew](https://brew.sh/)
 - [iTerm2](https://github.com/gnachman/iTerm2) with [Tomorrow Night Eighties theme](https://github.com/chriskempson/tomorrow-theme)
 - [kube-ps1](https://github.com/jonmosco/kube-ps1) combined with [kubectx & kubens](https://github.com/ahmetb/kubectx)
-- [zsh](https://github.com/zsh-users/zsh)
+- [zsh](https://github.com/zsh-users/zsh) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+## zsh specific things/plugins
+
+- [aws](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/aws)
+- [brew](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/brew)
+- [kops](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/kops)
+- [kube-ps1](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/kube-ps1)
 
 ## Database specific things
 

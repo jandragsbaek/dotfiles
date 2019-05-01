@@ -15,13 +15,18 @@ brew install awscli \
              kubernetes-helm \
              python2 \
              python3 \
-             watch \ 
+             tmux \
+             watch \
              zsh
+
+# Add nerd-fonts, as that patch is far superior to anything else
+brew tap caskroom/fonts
 
 # cask packages
 brew cask install 1password \
                   alfred \
                   aviatrix-vpn-client \
+                  font-hack-nerd-font \
                   google-chrome \
                   slack \
                   visual-studio-code \
