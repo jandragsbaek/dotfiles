@@ -14,7 +14,7 @@
 - [sclack](https://github.com/haskellcamargo/sclack)
 - [zsh](https://github.com/zsh-users/zsh) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-## zsh specific things/plugins
+## oh-my-zsh specific things/plugins
 
 - [aws](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/aws)
 - [brew](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/brew)
