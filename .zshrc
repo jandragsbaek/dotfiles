@@ -64,10 +64,15 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   asdf
+  aws
   brew
-  git
+  docker-compose
+  helm
+  httpie
   kube-ps1
   kops
+  kubectl
+
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -104,5 +109,5 @@ export KOPS_STATE_STORE='s3://kops.blackwoodseven.com'
 export PATH="/usr/local/sbin:$PATH"   # let homebrew things be in PATH too
 
 # Alias madness
-alias k="kubectl"
 alias sclack="python3 ~/src/fun/sclack/app.py"
+alias vim=nvim
